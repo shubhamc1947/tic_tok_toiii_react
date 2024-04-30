@@ -1,0 +1,144 @@
+/*
+   ==========================================================================
+   Project Name: 
+   Description: 
+   Author: 
+   Version: 
+   License: 
+   ==========================================================================
+*/
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Anchor Styling */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* List Styling */
+ul, ol {
+    list-style: none;
+}
+/* Display Styling */
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+
+/* Add your custom styles below */
+
+
+.wrapper{
+    width: 100%;
+    background-color: #333;
+    color:whitesmoke;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wrapper h3{
+    text-transform: uppercase;
+    font-size:1.8rem;
+    margin-bottom:1rem;
+}
+h3 span{
+    color: #F2B851;
+}
+h4{
+    text-transform: uppercase;
+    font-size:1.1rem;
+    margin-bottom:1rem;
+}
+.main{
+    width:390px;
+    height: 390px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    background-color: #F2B851;
+}
+.box{
+    width:128px;
+    height: 128px;
+    /* border:0.2px solid black; */
+    background-color: #333 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box img{
+    height: 70px;
+
+}
+
+button{
+    margin-top:1rem;
+    padding:0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #F2B851;
+    color:#333;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* css media query for responsiveness here */
+
+@media only screen and (max-width: 450px) {
+    .main{
+        width:330px;
+        height: 330px;
+    }
+    .box{
+        width:108px;
+        height: 108px;
+    }
+    .box img{
+        height: 50px;
+    
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .main{
+        width:270px;
+        height: 270px;
+    }
+    .box{
+        width:88px;
+        height: 88px;
+    }
+    .box img{
+        height: 40px;
+    
+    }
+}
